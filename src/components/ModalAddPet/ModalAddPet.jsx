@@ -8,7 +8,7 @@ import * as Yup from 'yup';
 import { useCreatePetMutation } from '../../redux/services/petsSlice';
 
 const ModalAddPet = ({ onCancelButtonClick }) => {
-  const [createPet, { isLoading }] = useCreatePetMutation();
+  const [createPet] = useCreatePetMutation();
   const [isFirstRegisterStep, setIsFirstRegisterStep] = useState(true);
   const [image, setImage] = useState(null);
 
@@ -18,7 +18,7 @@ const ModalAddPet = ({ onCancelButtonClick }) => {
       : setIsFirstRegisterStep(true);
   };
 
-  const onImageChange = e => {
+  const onImageChange = (e) => {
     if (e.currentTarget.files && e.currentTarget.files[0]) {
       setImage(URL.createObjectURL(e.target.files[0]));
       formik.setFieldValue('image', e.currentTarget.files[0]);
@@ -138,7 +138,7 @@ const ModalAddPet = ({ onCancelButtonClick }) => {
                     id="imagePet"
                     name="image"
                     type="file"
-                    onChange={e => {
+                    onChange={(e) => {
                       formik.handleChange(e);
                       onImageChange(e);
                     }}

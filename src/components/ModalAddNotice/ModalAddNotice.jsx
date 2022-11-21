@@ -11,7 +11,7 @@ import { useCreateNoticeMutation } from '../../redux/services/noticesSlice';
 import { formDataAppender } from '../../helpers/formDataAppender';
 
 const ModalAddNotice = ({ closeButton }) => {
-  const [createNotice, { isLoading }] = useCreateNoticeMutation();
+  const [createNotice] = useCreateNoticeMutation();
   const [isFirstRegisterStep, setIsFirstRegisterStep] = useState(true);
   const [imagePreview, setImagePreview] = useState(null);
   const moveNextRegistration = () => {
@@ -21,7 +21,7 @@ const ModalAddNotice = ({ closeButton }) => {
       : setIsFirstRegisterStep(true);
   };
 
-  const onImageChange = e => {
+  const onImageChange = (e) => {
     if (e.currentTarget.files && e.currentTarget.files[0]) {
       setImagePreview(URL.createObjectURL(e.target.files[0]));
       formik.setFieldValue('image', e.currentTarget.files[0]);
@@ -68,7 +68,7 @@ const ModalAddNotice = ({ closeButton }) => {
         .required('Please enter location of your location'),
       sex: Yup.string().required('Please choose one'),
       price: Yup.string().when('category', {
-        is: category => category === 'sell',
+        is: (category) => category === 'sell',
         then: Yup.string()
           .required('Please enter')
           .matches(/^[1-9][0-9]*$/, 'Invalid price'),
@@ -327,7 +327,7 @@ const ModalAddNotice = ({ closeButton }) => {
                     id="image"
                     name="image"
                     type="file"
-                    onChange={e => {
+                    onChange={(e) => {
                       formik.handleChange(e);
                       onImageChange(e);
                     }}

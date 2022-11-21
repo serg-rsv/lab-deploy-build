@@ -3,7 +3,7 @@ import s from './AddNoticeButton.module.scss';
 import { useModal } from '../../../hooks/useModal';
 
 const AddNoticeButton = () => {
-  const { openModal, closeModal } = useModal();
+  const { openModal } = useModal();
   return (
     <div
       onClick={() => {

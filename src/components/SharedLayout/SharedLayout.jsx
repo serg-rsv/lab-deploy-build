@@ -1,4 +1,3 @@
-import s from './SharedLayout.module.scss';
 import Header from '../Header';
 import { Outlet } from 'react-router-dom';
 
