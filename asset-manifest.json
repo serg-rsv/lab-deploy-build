@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lab-deploy-build/static/css/main.07eb70c3.css",
+    "main.css": "/lab-deploy-build/static/css/main.60518fe9.css",
     "main.js": "/lab-deploy-build/static/js/main.16d68a18.js",
     "static/css/51.87e6e6a6.chunk.css": "/lab-deploy-build/static/css/51.87e6e6a6.chunk.css",
     "static/js/51.1d50b04f.chunk.js": "/lab-deploy-build/static/js/51.1d50b04f.chunk.js",
@@ -59,7 +59,7 @@
     "static/media/okIcon.svg": "/lab-deploy-build/static/media/okIcon.ddcd87b5c3f3cd05f546.svg",
     "static/media/+.svg": "/lab-deploy-build/static/media/+.18dde0ab6d2ab0cd36f9.svg",
     "static/media/add-white.svg": "/lab-deploy-build/static/media/add-white.309c67ed07da0ec91950.svg",
-    "main.07eb70c3.css.map": "/lab-deploy-build/static/css/main.07eb70c3.css.map",
+    "main.60518fe9.css.map": "/lab-deploy-build/static/css/main.60518fe9.css.map",
     "main.16d68a18.js.map": "/lab-deploy-build/static/js/main.16d68a18.js.map",
     "51.87e6e6a6.chunk.css.map": "/lab-deploy-build/static/css/51.87e6e6a6.chunk.css.map",
     "51.1d50b04f.chunk.js.map": "/lab-deploy-build/static/js/51.1d50b04f.chunk.js.map",
@@ -92,7 +92,7 @@
     "910.e76ecc29.chunk.js.map": "/lab-deploy-build/static/js/910.e76ecc29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07eb70c3.css",
+    "static/css/main.60518fe9.css",
     "static/js/main.16d68a18.js"
   ]
 }
