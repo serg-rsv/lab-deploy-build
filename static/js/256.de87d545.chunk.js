@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklab_deploy_build=self.webpackChunklab_deploy_build||[]).push([[256],{9256:function(e,u,l){l.r(u);var n=l(184);u.default=function(){return(0,n.jsx)("div",{children:(0,n.jsx)("h1",{children:"Nothing found for your requests"})})}}}]);
+//# sourceMappingURL=256.de87d545.chunk.js.map
